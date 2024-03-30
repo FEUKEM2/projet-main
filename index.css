@@ -1,0 +1,220 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+header {
+    transition: background-color 0.5s;
+}
+
+header:hover {
+    background-color: #0a3c81; 
+}
+header {
+    background-color: #b9c0cc;
+    color: #fff;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+}
+.img{
+    border-radius: 10%;
+
+}
+
+
+.img {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+section#hero {
+    background-color: #F8F9FA;
+    text-align: center;
+    padding: 100px 0;
+}
+
+section#hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section#hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4285F4;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn1 {
+    display: inline-block;
+    background-color: #104db6;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5%;
+    transition: background-color 0.3s;
+}
+
+
+.btn:hover {
+    background-color: #357AE8;
+}
+
+section {
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+footer .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer .social-icons li:last-child {
+    margin-right: 0;
+}
+
+footer .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    opacity: 0.7;
+}
+
+/* gestion des images */
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Effet magnétique sur le texte */
+@keyframes magnetic {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+   /* Effet magnétique */
+   @keyframes magnetic {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Appliquer l'effet magnétique au texte */
+.container h1, .container h2, .container p, .btn1 {
+    animation: magnetic 2s infinite;
+}
+
+/* Effet magnétique */
+@keyframes magnetic {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Appliquer l'effet magnétique aux images */
+.container img {
+    animation: magnetic 2s infinite;
+}
+
+/* Appliquer l'effet d'apparition et magnétique aux images */
+.container img {
+    opacity: 0; /* Les images sont initialement invisibles */
+    animation: fadeIn 1s ease forwards, magnetic 2s infinite; /* Appliquer les deux animations */
+}
+
+/* Appliquer un délai croissant à chaque image */
+.container img:nth-child(1) {
+    animation-delay: 0s; /* Pas de délai pour la première image */
+}
+
+.container img:nth-child(2) {
+    animation-delay: 0.5s; /* Décaler l'apparition de la deuxième image de 0.5s */
+}
+
+.container img:nth-child(3) {
+    animation-delay: 1s; /* Décaler l'apparition de la troisième image de 1s */
+}
+
+/* Ajouter des règles pour plus d'images si nécessaire */
+
+
+
+
+
