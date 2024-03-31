@@ -122,37 +122,6 @@ section {
 
 
 
-footer {
-    background-color: #000000;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer .social-icons {
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-footer .social-icons li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-footer .social-icons li:last-child {
-    margin-right: 0;
-}
-
-footer .social-icons a {
-    color: #fff;
-    font-size: 24px;
-    text-decoration: none;
-}
-
-footer .social-icons a:hover {
-    opacity: 0.7;
-}
 
 /* gestion des images */
 
@@ -177,7 +146,7 @@ footer .social-icons a:hover {
 }
 
 /* Appliquer l'effet magnétique au texte */
-.container h1, .container h2, .container p, .btn1 {
+.container h1, .container h2, .container p, .btn {
     animation: magnetic 2s infinite;
 }
 
@@ -187,34 +156,5 @@ footer .social-icons a:hover {
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
 }
-
-/* Appliquer l'effet magnétique aux images */
-.container img {
-    animation: magnetic 2s infinite;
-}
-
-/* Appliquer l'effet d'apparition et magnétique aux images */
-.container img {
-    opacity: 0; /* Les images sont initialement invisibles */
-    animation: fadeIn 1s ease forwards, magnetic 2s infinite; /* Appliquer les deux animations */
-}
-
-/* Appliquer un délai croissant à chaque image */
-.container img:nth-child(1) {
-    animation-delay: 0s; /* Pas de délai pour la première image */
-}
-
-.container img:nth-child(2) {
-    animation-delay: 0.5s; /* Décaler l'apparition de la deuxième image de 0.5s */
-}
-
-.container img:nth-child(3) {
-    animation-delay: 1s; /* Décaler l'apparition de la troisième image de 1s */
-}
-
-/* Ajouter des règles pour plus d'images si nécessaire */
-
-
-
 
 
