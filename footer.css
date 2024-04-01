@@ -168,11 +168,17 @@ h1 {
   font-size: 50%;
   color: aqua;
  }
+
 @font-face {
-  font-family: "MyPolice";
-  src: url('Roboto/Roboto-Thin.ttf') format('woff');  
-  
+  font-family: 'MaPoliceCustom';
+  src: url('poppins/Poppins-Black.ttf') format('woff2'),
+ 
 }
+
+h1 {
+  font-family: 'MaPoliceCustom', sans-serif;
+}
+
 
 
 
