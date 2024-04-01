@@ -1,4 +1,56 @@
 
+
+nav {
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 5px 0; 
+  width: 100%; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: 1000; 
+}
+
+
+nav a {
+  color: white; 
+  text-decoration: none; 
+  padding: 10px 20px; 
+}
+
+
+nav .logo img {
+  height: 70px; 
+  width: auto; 
+}
+
+
+.container {
+  width: 90%; 
+  margin: 0 auto; 
+}
+
+
+nav ul ul {
+  display: none; 
+  position: absolute; 
+  top: 100%; 
+  left: 0; 
+  background-color: #333;
+  padding: 10px 0; 
+}
+
+
+nav ul ul li {
+  width: 100%; 
+  text-align: center; 
+}
+
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+
 footer {
   background-color: #333; 
   color: #fff; 
@@ -64,6 +116,24 @@ h1 {
   font-family: Arial, sans-serif; 
 }
 
+.btn1 {
+  background-color: green; 
+  color: white;
+  padding: 10px 20px; 
+  text-decoration: none; 
+  transition: background-color 0.3s, color 0.3s; 
+  display: inline-block; 
+}
+
+
+.btn1:hover {
+  background-color: black; 
+  color: white;
+
+
+.container {
+  width: 90%; 
+  margin: 0 auto;
 
 @font-face {
   font-family: "myPolice";
@@ -99,4 +169,4 @@ p{
 
 #img img {
   animation: moveUpDown 3s infinite; 
-
+}
